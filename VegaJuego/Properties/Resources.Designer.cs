@@ -173,6 +173,16 @@ namespace VegaJuego.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FondoFinal1 {
+            get {
+                object obj = ResourceManager.GetObject("FondoFinal1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap FondoPantalla {
             get {
                 object obj = ResourceManager.GetObject("FondoPantalla", resourceCulture);
