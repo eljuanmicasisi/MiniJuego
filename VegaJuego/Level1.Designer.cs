@@ -28,8 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Level1));
+            timer1 = new System.Windows.Forms.Timer(components);
             SuspendLayout();
+            // 
+            // timer1
+            // 
+            timer1.Tick += timer1_Tick_1;
             // 
             // Level1
             // 
@@ -42,9 +48,12 @@
             Name = "Level1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "VegaZelda";
+            KeyPress += Level1_KeyPress;
             ResumeLayout(false);
         }
 
         #endregion
+
+        private System.Windows.Forms.Timer timer1;
     }
 }
