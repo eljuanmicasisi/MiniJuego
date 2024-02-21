@@ -34,8 +34,8 @@ namespace VegaJuego
 
         public int Salud
         {
-            get { return arma; }
-            set { arma = value; }
+            get { return salud; }
+            set { salud = value; }
         }
 
         // Creamos el método mover, para permitirnos mover el personaje con las teclas W, A, S, D 
