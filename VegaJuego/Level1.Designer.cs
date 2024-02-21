@@ -30,12 +30,13 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Level1));
-            timer1 = new System.Windows.Forms.Timer(components);
+            TimerBroncas = new System.Windows.Forms.Timer(components);
             SuspendLayout();
             // 
-            // timer1
+            // TimerBroncas
             // 
-            timer1.Tick += timer1_Tick_1;
+            TimerBroncas.Enabled = true;
+            TimerBroncas.Tick += timer1_Tick_1;
             // 
             // Level1
             // 
@@ -54,6 +55,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer TimerBroncas;
     }
 }
