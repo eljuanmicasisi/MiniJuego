@@ -19,25 +19,25 @@ namespace VegaJuego
         public new void mover()
         {
             // Hacemos que el personaje se mueva hacia la derecha
-            if (Direccion == "DERECHA")
+            if (Direccion == "Derecha")
             {
                 this.Caja.BackgroundImage = global::VegaJuego.Properties.Resources.Broncas_Derecha;
                 this.Caja.Location= new Point(Caja.Location.X + 10, Caja.Location.Y);       // Velocidad = 10 (Se puede aumentar variando ese numero)
                 // Si el personaje llega hasta el borde derecho de la pantalla, cambiará su dirección hacia la izquierda
                 if (Caja.Location.X > Lienzo.Size.Width - 120)
                 {
-                    Direccion = "IZQUIERDA";
+                    Direccion = "Izquierda";
                 }
             }
             // Hacemos que el personaje se mueva hacia la izquierda
-            if (Direccion == "IZQUIERDA")
+            if (Direccion == "Izquierda")
             {
                 this.Caja.BackgroundImage = global::VegaJuego.Properties.Resources.Broncas_Izquierda;
                 this.Caja.Location = new Point(Caja.Location.X - 10, Caja.Location.Y);      // Velocidad = 10 (Se puede aumentar variando ese numero)
                 // Si el personaje llega hasta el borde izquierdo de la pantalla, cambiará su dirección hacia la derecha
                 if (Caja.Location.X < 0)
                 {
-                    Direccion = "DERECHA";
+                    Direccion = "Derecha";
                 }
             }
         }

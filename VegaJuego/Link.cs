@@ -57,20 +57,20 @@ namespace VegaJuego
                 this.Caja.Location = new Point(this.Caja.Location.X, this.Caja.Location.Y + 10);
             }
 
+            // Asignamos los valores para movernos hacia la derecha
+            if (e.KeyChar == 'd' && (Caja.Location.X < Lienzo.Size.Width - 120 ))
+            {
+                this.Direccion = "DERECHA";
+                this.Caja.BackgroundImage = global::VegaJuego.Properties.Resources.derecha;
+                this.Caja.Location = new Point(this.Caja.Location.X + 10, this.Caja.Location.Y);
+            }
+
             // Asignamos los valores para movernos hacia la izquierda
             if (e.KeyChar == 'a' && (Caja.Location.X > 0))
             {
                 this.Direccion = "IZQUIERDA";
                 this.Caja.BackgroundImage = global::VegaJuego.Properties.Resources.izquierda;
                 this.Caja.Location = new Point(this.Caja.Location.X - 10, this.Caja.Location.Y);
-            }
-
-            // Asignamos los valores para movernos hacaia la derecha
-            if (e.KeyChar == 'd' && (Caja.Location.Y < Lienzo.Size.Height - 120))
-            {
-                this.Direccion = "DERECHA";
-                this.Caja.BackgroundImage = global::VegaJuego.Properties.Resources.derecha;
-                this.Caja.Location = new Point(this.Caja.Location.X + 10, this.Caja.Location.Y);
             }
 
         }

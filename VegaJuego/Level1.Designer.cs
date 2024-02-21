@@ -30,13 +30,13 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Level1));
-            TimerBroncas = new System.Windows.Forms.Timer(components);
+            MovEnemigos = new System.Windows.Forms.Timer(components);
             SuspendLayout();
             // 
-            // TimerBroncas
+            // MovEnemigos
             // 
-            TimerBroncas.Enabled = true;
-            TimerBroncas.Tick += timer1_Tick_1;
+            MovEnemigos.Enabled = true;
+            MovEnemigos.Tick += timer1_Tick_1;
             // 
             // Level1
             // 
@@ -55,6 +55,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Timer TimerBroncas;
+        private System.Windows.Forms.Timer MovEnemigos;
     }
 }

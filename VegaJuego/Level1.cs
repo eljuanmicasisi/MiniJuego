@@ -29,10 +29,15 @@ namespace VegaJuego
             Debug.WriteLine("[X" + player.Caja.Location.X + ",Y" + player.Caja.Location.Y + "]");
         }
 
-        // Creamos un timer para el primer Enemigo          ---PREGUNTAR A FERNANDO PARA RENOMBRAR EL TIMER (No se abre el apartado de propiedades)---
+        // Creamos un timer para el primer Enemigo
         private void timer1_Tick_1(object sender, EventArgs e)
         {
             Enemigo1.mover();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
